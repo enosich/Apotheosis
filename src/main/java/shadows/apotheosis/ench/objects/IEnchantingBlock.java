@@ -31,7 +31,7 @@ public interface IEnchantingBlock extends IForgeBlock {
 	 * @return The max Eterna this block may contribute towards.  Once past this value, this block has no effect.
 	 */
 	default float getMaxEnchantingPower(BlockState state, IWorldReader world, BlockPos pos) {
-		return 100F;
+		return 50F;
 	}
 
 	/**
@@ -41,7 +41,7 @@ public interface IEnchantingBlock extends IForgeBlock {
 	 * @return The change in Quanta caused by this block.
 	 */
 	default float getQuantaBonus(BlockState state, IWorldReader world, BlockPos pos) {
-		return 100F;
+		return 50F;
 	}
 
 	/**
@@ -51,7 +51,7 @@ public interface IEnchantingBlock extends IForgeBlock {
 	 * @return The change in Arcana caused by this block.
 	 */
 	default float getArcanaBonus(BlockState state, IWorldReader world, BlockPos pos) {
-		return 100F;
+		return 50F;
 	}
 
 }

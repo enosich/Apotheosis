@@ -34,17 +34,17 @@ public class HellshelfBlock extends Block implements IEnchantingBlock {
 
 	@Override
 	public float getEnchantPowerBonus(BlockState state, IWorldReader world, BlockPos pos) {
-		return 1.5F + state.get(INFUSION) * 0.1F;
+		return 0;
 	}
 
 	@Override
 	public float getQuantaBonus(BlockState state, IWorldReader world, BlockPos pos) {
-		return 0.15F + state.get(INFUSION) * 0.01F;
+		return 0;
 	}
 
 	@Override
 	public float getMaxEnchantingPower(BlockState state, IWorldReader world, BlockPos pos) {
-		return 22.5F + state.get(INFUSION) * 1.5F;
+		return 0;
 	}
 
 	@Override

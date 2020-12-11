@@ -47,20 +47,6 @@ public class EnchModuleClient {
 			float eterna = EnchantingStatManager.getEterna(state, world, BlockPos.ZERO);
 			float quanta = EnchantingStatManager.getQuanta(state, world, BlockPos.ZERO);
 			float arcana = EnchantingStatManager.getArcana(state, world, BlockPos.ZERO);
-			if (eterna != 0 || quanta != 0 || arcana != 0) {
-				e.getToolTip().add(new TranslationTextComponent("info.apotheosis.ench_stats").mergeStyle(TextFormatting.GOLD));
-			}
-			if (eterna != 0) {
-				if (eterna > 0) {
-					e.getToolTip().add(new TranslationTextComponent("info.apotheosis.eterna.p", String.format("%.2f", eterna), String.format("%.2f", maxEterna)).mergeStyle(TextFormatting.GREEN));
-				} else e.getToolTip().add(new TranslationTextComponent("info.apotheosis.eterna", String.format("%.2f", eterna)).mergeStyle(TextFormatting.GREEN));
-			}
-			if (quanta != 0) {
-				e.getToolTip().add(new TranslationTextComponent("info.apotheosis.quanta" + (quanta > 0 ? ".p" : ""), String.format("%.2f", quanta * 10)).mergeStyle(TextFormatting.RED));
-			}
-			if (arcana != 0) {
-				e.getToolTip().add(new TranslationTextComponent("info.apotheosis.arcana" + (arcana > 0 ? ".p" : ""), String.format("%.2f", arcana * 10)).mergeStyle(TextFormatting.DARK_PURPLE));
-			}
 		}
 	}
 

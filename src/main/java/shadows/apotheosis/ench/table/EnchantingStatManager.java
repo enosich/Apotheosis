@@ -63,30 +63,22 @@ public class EnchantingStatManager extends JsonReloadListener {
 	}
 
 	public static float getEterna(BlockState state, World world, BlockPos pos) {
-		Block block = state.getBlock();
-		if (INSTANCE.stats.containsKey(block.delegate)) return INSTANCE.stats.get(block.delegate).eterna;
-		return state.getEnchantPowerBonus(world, pos);
+		return 50;
 	}
 
 	public static float getMaxEterna(BlockState state, World world, BlockPos pos) {
 		Block block = state.getBlock();
 		if (INSTANCE.stats.containsKey(block.delegate)) return INSTANCE.stats.get(block.delegate).maxEterna;
 		if (block instanceof IEnchantingBlock) return ((IEnchantingBlock) block).getMaxEnchantingPower(state, world, pos);
-		return 15;
+		return 50;
 	}
 
 	public static float getQuanta(BlockState state, World world, BlockPos pos) {
-		Block block = state.getBlock();
-		if (INSTANCE.stats.containsKey(block.delegate)) return INSTANCE.stats.get(block.delegate).quanta;
-		else if (block instanceof IEnchantingBlock) return ((IEnchantingBlock) block).getQuantaBonus(state, world, pos);
-		return 0;
+		return 50;
 	}
 
 	public static float getArcana(BlockState state, World world, BlockPos pos) {
-		Block block = state.getBlock();
-		if (INSTANCE.stats.containsKey(block.delegate)) return INSTANCE.stats.get(block.delegate).arcana;
-		else if (block instanceof IEnchantingBlock) return ((IEnchantingBlock) block).getArcanaBonus(state, world, pos);
-		return 0;
+		return 50;
 	}
 
 	public static float getAbsoluteMaxEterna() {
