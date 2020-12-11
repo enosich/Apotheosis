@@ -1,10 +1,15 @@
-# Apotheosis [![](http://cf.way2muchnoise.eu/apotheosis.svg)](https://www.curseforge.com/minecraft/mc-mods/apotheosis) [![](http://cf.way2muchnoise.eu/versions/apotheosis.svg)](https://www.curseforge.com/minecraft/mc-mods/apotheosis)
+# Apotheosis: Enchantment Overkill Edition [![](http://cf.way2muchnoise.eu/apotheosis.svg)](https://www.curseforge.com/minecraft/mc-mods/apotheosis) [![](http://cf.way2muchnoise.eu/versions/apotheosis.svg)](https://www.curseforge.com/minecraft/mc-mods/apotheosis)
 
 Apotheosis is a mod about adding additional layers of content to vanilla systems.  It doesn't add much in the way of blocks or items, but it adds a significant amount of content.
 It's divided into modules, each separate from another.  Any module can be disabled at will, but all the modules work best when they are all enabled.
 
+Apotheosis: Enchantment Overkill Edition is an enchantment enthusiast's wet dream, give it a try and see how crazy your enchantments can go!
+
+
+
 The following modules are present:
 * Enchanting: Adds a ton of extra enchantments, uncaps the enchanting table, and edits some core mechanics of the game.
+* * Enchantment Overkill: The base Eterna, Quanta, and Arcana values for bookshelves are changed from their default values to 100%.
 * * Anvil: Anvils can be enchanted, and are also uncapped.
 * Spawner: Mob Spawners can be customized, and they can be changed to any type by acquiring spawn eggs.
 * Deadly: Boss Monsters and Rogue Spawners are present in the world, both with the potential for unique loot.
